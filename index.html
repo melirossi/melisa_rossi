@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Imagen y texto en la pestaña del navegador-->
+  <link rel="icon" href="Images/MLogo.png">
+  <title>Melisa Rossi</title>
+
+  <!--Vinculación con CSS-->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!--Vinculación de CSS para usar Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+  <!--Comienza Header-->
+
+  <!--Mensaje de bienvenida-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="bienvenida">
+        <p>Bienvenido a mi portfolio web</p>
+      </div>
+    </div>
+  </div>
+
+  <!--NavBar-->
+  <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank">
+              <img class="img-fluid" src="Images/Logo ArgProgram.svg" alt="Logo" width="100px">
+          </a>
+          <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#perfil" >Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#habilidades">Habilidades</i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#experiencia">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#educacion">Educación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#proyectos">Proyectos</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="mailto:melisa.s.rossi@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="https://www.linkedin.com/in/melisa-rossi-574873164/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="https://github.com/melirossi" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href=""><i class="fa-solid fa-user-lock"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+  <!--Portada-->
+  <div class="portada">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1>
+            <a href="" class="typewrite" data-period="2000" data-type='[ "Hola, soy Melisa Rossi.", "Soy Analista de Datos.", "Soy Desarrolladora Full Stack." ]'>
+              <span class="wrap"></span>
+            </a>
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#contacto"><button type="button" class="btn">Contacto</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--Comienza Main-->
+  <main>
+
+    <!--Perfil-->
+    <div class="perfil" id="perfil">
+      <div class="container-fluid">
+        <div class="row">          
+            <div class="foto col-sm-12 col-lg-3 g-0"> 
+              <div></div>               
+            </div>
+            <div class="col-sm-12 col-lg-9 p-5">
+                <h1>Sobre mí</h1>
+                <p>Cuento con dos años de experiencia como becaria doctoral en el área de Riesgo Ambiental, donde trabajo con datos de todo tipo en equipos multidisciplinarios. Actualmente, me encuentro en la búsqueda de nuevas oportunidades laborales dentro del área IT para seguir desarrollando mis habilidades analíticas e informáticas.</p>
+                <a href="https://drive.google.com/file/d/1yaa9zg6m2gIiZsTZqVIQJEn1rFzLw1je/view?usp=sharing" target="_blank"><button type="button" class="btn">Currículum Vitae</button></a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Habilidades-->
+    <div class="habilidades"  id="habilidades">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h1>Habilidades</h1>
+          </div>
+        </div>
+        <div class="row text-center">          
+            <div class="col-sm-12 col-lg-6"> 
+              <button type="button" class="btn nohover">Blandas</button>    
+              <div class="blandas">
+                <h2>Curiosidad</h2>
+                <p>Siempre tengo el impulso de encontrar respuestas a las preguntas que me formulo.</p>
+                <h2>Creatividad</h2>
+                <p>Tengo una gran facilidad para crear nuevas ideas y encontrar soluciones innovadoras.</p>                                 
+              </div> 
+              <button type="button" class="btn nohover mt-3">Idiomas</button>    
+              <div class="idiomas">
+                <h2>Inglés</h2>
+                <span>Egresé en diciembre del 2022 del programa <strong>“Inglés para el Trabajo”</strong> dictado por <strong>Pearson English </strong> (curso de inglés orientado a la información y tecnología, equivalente al nivel B2).</span>                               
+              </div>         
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <button type="button" class="btn nohover habduras">Duras</button>
+              <div class="duras">
+                <h2>Lenguajes y frameworks</h2> 
+                <img class="img-fluid" src="Images/Habilidades/bootstrap.png" alt="bootstrap">
+                <img class="img-fluid" src="Images/Habilidades/css.png" alt="css">
+                <img class="img-fluid" src="Images/Habilidades/html.png" alt="html">
+                <img class="img-fluid" src="Images/Habilidades/javascript.png" alt="javascript">
+                <img class="img-fluid" src="Images/Habilidades/java.png" alt="java">
+                <img class="img-fluid" src="Images/Habilidades/python.png" alt="python">   
+
+                <h2>Bases de datos</h2> 
+                <img class="img-fluid" src="Images/Habilidades/mysql.png" alt="mysql"> 
+                <h2>Herramientas de visualización</h2>
+                <img class="img-fluid" src="Images/Habilidades/datastudio.jpg" alt="datastudio">
+                <img class="img-fluid" src="Images/Habilidades/figma.png" alt="figma"> 
+                <img class="img-fluid" src="Images/Habilidades/inkscape.png" alt="inkscape">  
+                <img class="img-fluid" src="Images/Habilidades/premiere.png" alt="adobepremiere">
+                <h2>Otras herramientas</h2>
+                <img class="img-fluid" src="Images/Habilidades/arcgis.png" alt="arcgis">
+                <img class="img-fluid" src="Images/Habilidades/git.png" alt="git"> 
+                <img class="img-fluid" src="Images/Habilidades/qgis.png" alt="qgis">  
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Experiencia-->
+    <div class="experiencia" id="experiencia">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h1>Experiencia</h1>
+          </div>
+        </div>
+        <div class="row">          
+          <div class="col-sm-12 col-lg-1"> 
+            <img class="img-fluid" src="Images/conicet.png" alt="Conicet">                                 
+          </div>    
+          <div class="col-sm-12 col-lg-7">
+            <h2>Becaria Doctoral en Temas Estratégicos</h2> 
+            <h3>CONICET, Buenos Aires</h3>      
+          </div>  
+          <div class="col-sm-12 col-lg-4">
+            <h4>04/2021 — Actualidad</h4>              
+          </div> 
+        </div>
+        <div class="row descripcion">
+          <div class="col-sm-12 col-md-11 offset-md-1">
+            <p><i class="fa-solid fa-chart-bar"></i>Realicé un análisis estadístico de datos en muestras de sedimentos.</p>
+            <p><i class="fa-solid fa-map-location-dot"></i>Confeccioné cartografía utilizando tecnologías SIG a partir de datos geoespaciados.</p>
+            <p><i class="fa-solid fa-magnifying-glass-chart"></i>Realicé matrices de ponderación para zonificar los riesgos ambientales de la zona de estudio.</p>
+            <p><i class="fa-solid fa-lightbulb"></i>Interpreté necesidades funcionales de la zona de estudio y generé soluciones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Educación-->
+    <div class="educacion" id="educacion">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h1>Educación</h1>
+          </div>
+        </div>
+        <div class="row">          
+          <div class="col-sm-12 col-lg-1"> 
+            <img class="img-fluid" src="Images/argprogram.png" alt="Argentina Programa">                                 
+          </div>    
+          <div class="col-sm-12 col-lg-7">
+            <h2>#YoProgramo</h2> 
+            <h3>Ministerio de Economía e Instituto Nacional de Tecnología Industrial</h3>      
+          </div>  
+          <div class="col-sm-12 col-lg-4">
+            <h4>10/2022 — 05/2023</h4>              
+          </div> 
+        </div>
+        <div class="row descripcion">
+          <div class="col-sm-12 col-md-11 offset-md-1">
+            <p><i class="fa-solid fa-clock"></i>Nociones de Scrum y gestión del tiempo.</p>
+            <p><i class="fa-solid fa-sitemap"></i>Arquitectura web.</p>
+            <p><i class="fa-brands fa-github"></i>Uso de Git y GitHub.</p>
+            <p><i class="fa-solid fa-object-group"></i>Front End: HTML, CSS, Bootstrap, JavaScript, TypeScript y Angular. </p>
+            <p><i class="fa-solid fa-database"></i>Bases de Datos.</p>
+            <p><i class="fa-solid fa-server"></i>Back End: Java, Java Server Pages y Spring Boot.</p>
+          </div>
+        </div>
+        <div class="row">          
+          <div class="col-sm-12 col-lg-1"> 
+            <img class="img-fluid" src="Images/cac.png" alt="Codo a Codo">                                 
+          </div>    
+          <div class="col-sm-12 col-lg-7">
+            <h2>Full Stack Java</h2> 
+            <h3>Codo a Codo 4.0</h3>      
+          </div>  
+          <div class="col-sm-12 col-lg-4">
+            <h4>08/2022 — 12/2022</h4>              
+          </div> 
+        </div>
+        <div class="row descripcion">
+          <div class="col-sm-12 col-md-11 offset-md-1">
+            <p><i class="fa-solid fa-sitemap"></i>Nociones de Scrum y arquitectura web.</p>
+            <p><i class="fa-brands fa-github"></i>Uso de Git y GitHub.</p>
+            <p><i class="fa-solid fa-object-group"></i>Front End: HTML, CSS, Bootstrap y JavaScript.</p>
+            <p><i class="fa-solid fa-database"></i>Bases de Datos.</p>
+            <p><i class="fa-solid fa-server"></i>Back End: Java y Java Server Pages.</p>
+          </div>
+        </div>
+        <div class="row">          
+          <div class="col-sm-12 col-lg-1"> 
+            <img class="img-fluid" src="Images/cac.png" alt="Codo a Codo">                                 
+          </div>    
+          <div class="col-sm-12 col-lg-7">
+            <h2>Big Data</h2> 
+            <h3>Codo a Codo 4.0</h3>      
+          </div>  
+          <div class="col-sm-12 col-lg-4">
+            <h4>03/2022 — 07/2022</h4>              
+          </div> 
+        </div>
+        <div class="row descripcion">
+          <div class="col-sm-12 col-md-11 offset-md-1">
+            <p><i class="fa-solid fa-clock"></i>Conceptos sobre bases de datos, big data, lógica, estadística y algoritmos.</p>
+            <p><i class="fa-solid fa-database"></i>SQL.</p>
+            <p><i class="fa-solid fa-table"></i>Excel y Google Data Studio para análisis de datos.</p>
+            <p><i class="fa-solid fa-chart-pie"></i>Python orientado a datos.</p>
+          </div>
+        </div>
+        <div class="row">          
+          <div class="col-sm-12 col-lg-1"> 
+            <img class="img-fluid" src="Images/exactas.png" alt="Exactas">                                 
+          </div>    
+          <div class="col-sm-12 col-lg-7">
+            <h2>Licenciada en Ciencias Geológicas</h2> 
+            <h3>Universidad de Buenos Aires</h3>      
+          </div>  
+          <div class="col-sm-12 col-lg-4">
+            <h4>03/2014 — 03/2020</h4>              
+          </div> 
+        </div>
+        <div class="row descripcion">
+          <div class="col-sm-12 col-md-11 offset-md-1">
+            <p><i class="fa-solid fa-graduation-cap"></i>Durante la licenciatura aprendí sobre cristalografía, óptica, dinámica de fluidos, termodinámica, biología, climatología, mecánica, materiales, topografía, entre otras áreas.</p>
+            <p><i class="fa-solid fa-briefcase"></i>Trabajé con cartografía, sistemas informáticos, representación de datos, gestión ambiental y de riesgo.</p>
+            <p><i class="fa-solid fa-pen"></i>En mi Trabajo Final de Licenciatura realicé una caracterización de sedimentos y aguas superficiales dentro de la segunda sección del Delta del Paraná.</p>
+          </div>
+        </div>
+        <a href="https://www.linkedin.com/in/melisasrossi/details/certifications/" target="_blank"><button type="button" class="btn">Ver más en LinkedIn</button></a>
+      </div>
+    </div>
+
+    <!--Proyectos-->
+    <div class="proyectos" id="proyectos">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h1>Proyectos</h1>
+          </div>
+        </div>
+        <div class="row">          
+          <div class="card col-lg-4 col-sm-12">
+            <img src="Images/Proyectos/Portfolio.png" class="card-img-top" alt="Portfolio web">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Web</h5>
+              <p class="card-text">Mi Portfolio Web donde se pueden visualizar experiencia, educación, habilidades, proyectos realizados, entre otros apartados.</p>
+              <p class="card-text">Año: 2023</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <p class="card-text">Tecnologías utilizadas:</p>
+                <img class="img-fluid" src="Images/Habilidades/bootstrap.png" alt="bootstrap">
+                <img class="img-fluid" src="Images/Habilidades/css.png" alt="css">
+                <img class="img-fluid" src="Images/Habilidades/html.png" alt="html">
+                <img class="img-fluid" src="Images/Habilidades/javascript.png" alt="javascript">
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="https://github.com/melirossi/MyPortfolio_FrontEnd" target="_blank" class="card-link">Ir al repositorio</a>
+            </div>
+          </div>
+          <div class="card col-lg-4 col-sm-12">
+            <img src="Images/Proyectos/PatientRecord.png" class="card-img-top" alt="Patient Record Web">
+            <div class="card-body">
+              <h5 class="card-title">Registro de pacientes</h5>
+              <p class="card-text">Página dinámica para una veterinaria donde se puede ingresar información de los pacientes, modificarla y eliminarla de forma simple y atractiva.</p>
+              <p class="card-text">Año: 2022</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <p class="card-text">Tecnologías utilizadas:</p>
+                <img class="img-fluid" src="Images/Habilidades/css.png" alt="css">
+                <img class="img-fluid" src="Images/Habilidades/java.png" alt="java">
+                <img class="img-fluid" src="Images/Habilidades/mysql.png" alt="mysql">
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="https://github.com/melirossi/Vet_Patient_Record" target="_blank" class="card-link">Ir al repositorio</a>
+            </div>
+          </div>
+          <div class="card col-lg-4 col-sm-12">
+            <img src="Images/Proyectos/DatosPython.png" class="card-img-top" alt="Ciencia de Datos con Python">
+            <div class="card-body">
+              <h5 class="card-title">Exploración de datos de comercio</h5>
+              <p class="card-text">Integración y análisis de sets de datos de registros de la actividad de un comercio a lo largo de los meses para tomar decisiones.</p>
+              <p class="card-text">Año: 2022</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <p class="card-text">Tecnologías utilizadas:</p>
+                <img class="img-fluid" src="Images/Habilidades/python.png" alt="python">
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="https://deepnote.com/@melisa/TP-Final-Melisa-Rossi-ba95f8d2-7267-49c4-97f7-c70b16079419" target="_blank" class="card-link">Ir al repositorio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="masproyect">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <a href="https://github.com/melirossi?tab=repositories" target="_blank"><button type="button" class="btn">Ver más proyectos</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacto" id="contacto">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h1>Contacto</h1>
+          </div>
+        </div>
+        <div class="row">          
+          <div class="col-sm-12 col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title"><i class="fa-solid fa-location-dot"></i>Ubicación</h2>
+                <p class="card-text">Buenos Aires, Argentina.</p>
+              </div>
+            </div> 
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title"><i class="fa-solid fa-envelope"></i>Correo electrónico</h2>
+                <p class="card-text">melisa.s.rossi@gmail.com</p>
+              </div>
+            </div> 
+          </div>
+          <div class="col-sm-12 col-lg-4 text-center">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title"><i class="fa-solid fa-thumbs-up"></i>Redes sociales</h2>
+                <a href="https://www.linkedin.com/in/melisa-rossi-574873164/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/melirossi" target="_blank"><i class="fa-brands fa-github"></i></a> 
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!--Comienza Footer-->
+  <footer>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="copyright">
+          <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Designed & Developed by Melisa Rossi</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!--Vinculación JavaScript-->
+  <script src="script.js"></script>
+
+  <!--Vinculación de JavaScript Bundle with Popper para usar Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+  <!--Vinculación para íconos-->
+  <script src="https://kit.fontawesome.com/e6da6f019e.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

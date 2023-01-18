@@ -1,0 +1,798 @@
+/* Imports Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0px;    
+}
+
+/* Mensaje de bienvenida */
+
+.bienvenida {
+    display: flex;
+    background-color: #e2ebf1;    
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.bienvenida p {
+    margin: 3px auto;
+}
+
+/* NavBar */
+
+.navbar {
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    background-color: white;  
+}
+
+.navbar img {
+    margin-left: 40px;
+}
+
+.collapse a {
+    color: grey;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.collapse i {
+    color: grey;
+    font-size: 20px;
+    margin: 7px 5px;
+}
+
+.collapse .fa-solid {
+    color: #7aa3bf;
+    font-size: 19px;
+    margin: 7px 40px;
+}
+
+.collapse a:hover {
+    color: #7aa3bf;
+}
+
+.collapse i:hover {
+    color: #7aa3bf;
+}
+
+.collapse .fa-solid:hover {
+    color: grey;
+}
+
+nav .collapse {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1097px) and (min-width: 992px) {
+    .navbar img {
+        display: none;
+    }
+}
+
+/* Portada */
+
+.portada {
+    background-image: url("Images/Portada.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portada a {
+    margin-left: 100px;
+    font-family: 'Signika Negative', sans-serif;
+    color: #1c243c;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.portada a:hover {
+    color: #2e536c;
+    font-weight: bold;
+}
+
+.portada h1 {
+    margin: 100px 0px;
+}
+
+.portada button {
+    background-color: #1c243c;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    margin: -50px auto 50px;
+    font-size: 17px;
+}
+
+.portada a .btn:hover {
+    color:#1c243c;
+    border: 2px solid #1c243c;
+}
+
+@media (max-width: 1400px) {
+    .portada h1 {
+        text-align: left;
+    }
+    .portada a {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .portada h1 {
+        text-align: center;
+    }
+    .portada a {
+        margin-left: auto;
+    }
+    .portada button {
+        display: flex;
+        justify-content: center
+    }
+}
+
+/* Perfil */
+
+.perfil .foto {
+    background-image: url(Images/foto\ carnet.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.perfil {
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    margin: 30px 150px;
+    border-radius: 20px;
+    background: white;
+}
+
+.perfil h1 {
+    margin: 30px 10px;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.perfil p {
+    margin: 30px 10px;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.perfil button {
+    background-color: #1c243c;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+}
+
+.perfil a .btn:hover {
+    color:#1c243c;
+    border: 2px solid #1c243c;
+}
+
+.perfil a {
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+}
+
+@media (max-width: 992px) {
+    .perfil img {
+        display: flex;
+        margin: 30px auto;
+        justify-self: center;
+        height: 300px;
+    }
+    .perfil {
+        margin: 30px 20px;
+    }
+    .perfil h1 {
+        text-align: center;
+        margin: -30px 5px;
+    }
+    .perfil p {
+        text-align: center;
+        margin: 40px 5px;
+    }
+    .perfil a {
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        color: #e2ebf1
+    }
+}
+
+/* Habilidades */
+
+.habilidades {
+    background: #e2ebf1;
+}
+
+.habilidades h1 {
+    margin: 30px auto;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.habilidades .btn {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    margin: -5px 15px;
+    width: 90%;
+    font-size: 17px;    
+    pointer-events: none;
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    background: #7aa3bf;
+}
+
+.habilidades .blandas, .idiomas {
+    color: #1c243c;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 90%;
+    padding: 7px;
+    background: white;
+}
+
+.habilidades .idiomas {
+    padding-bottom: 25px;
+}
+
+.habilidades .duras {
+    color: #1c243c;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 90%;
+    padding: 10px;
+    background: white;
+}
+
+.habilidades p {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+    margin: auto 5px 20px;
+    display: inline-flex;
+}
+
+.habilidades span {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+    margin: auto 5px 20px;
+}
+
+.habilidades h2 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 25px auto 8px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+}
+
+.habilidades img {
+    display: inline-flex;
+    margin: 8px 15px;
+    height: 40px;
+}
+
+@media (max-width: 992px) {
+    .habilidades .habduras {
+        margin-top: 20px;
+    }
+}
+
+/* Experiencia */
+
+.experiencia {
+    margin: 30px 150px;
+    border-radius: 20px;
+    padding: 7px;
+    color: #1c243c;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+}
+
+.experiencia h1 {
+    margin: 30px auto;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.experiencia img {
+    margin: 15px 15px;
+}
+
+.experiencia h2 {
+    margin: 10px 30px;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.experiencia h3 {
+    margin: 10px 30px;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #2e536c;
+}
+
+.experiencia h4 {
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #2e536c;
+    text-align: end;
+    margin: 10px 50px;
+}
+
+.experiencia p {
+    margin: 10px 30px;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+    color:#1c243c;
+}
+
+.experiencia .descripcion {
+    margin-bottom: 25px;
+}
+
+.experiencia i {
+    margin-right: 10px;
+    color:#2e536c;
+}
+
+@media (max-width: 992px) {
+    .experiencia {
+        margin: 30px 20px;
+    }
+    .experiencia img {
+        display: block;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .experiencia h2 {
+        text-align: center;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       }
+    .experiencia h3 {
+        text-align: center;
+        margin-top: 10px;
+        font-style: italic;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .experiencia h4 {
+        text-align: center;
+        margin-top: 5px; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .experiencia p {
+        text-align: center;
+        margin-top: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .experiencia p {
+        text-align: left;
+    }
+}
+
+/* Educación */
+
+.educacion {
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    margin: 30px 150px;
+    border-radius: 20px;
+    padding: 7px;
+    color: #1c243c;
+}
+
+.educacion h1 {
+    margin: 30px auto;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.educacion img {
+    margin: 15px 15px;
+}
+
+.educacion h2 {
+    margin: 10px 30px;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.educacion h3 {
+    margin: 10px 30px;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #2e536c;
+}
+
+.educacion h4 {
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #2e536c;
+    text-align: end;
+    margin: 10px 50px;
+}
+
+.educacion p {
+    margin: 10px 30px;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+    color:#1c243c;
+}
+
+.educacion .descripcion {
+    margin-bottom: 25px;
+}
+
+.educacion i {
+    margin-right: 10px;
+    color:#2e536c;
+}
+
+.educacion .tareas {
+    margin-bottom: 20px;
+}
+
+.educacion button {
+    background-color: #1c243c;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+}
+
+.educacion a .btn:hover {
+    color:#1c243c;
+    border: 2px solid #1c243c;
+}
+
+.educacion a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 992px) {
+    .educacion {
+        margin: 30px 20px;
+    }
+    .educacion img {
+        display: block;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .educacion h2 {
+        text-align: center;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       }
+    .educacion h3 {
+        text-align: center;
+        margin-top: 10px;
+        font-style: italic;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .educacion h4 {
+        text-align: center;
+        margin-top: 5px; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .educacion p {
+        text-align: center;
+        margin-top: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .educacion a {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .educacion p {
+        text-align: left;
+    }
+}
+
+/* Proyectos */
+
+.proyectos {
+    background: #e2ebf1;
+}
+
+.proyectos h1 {
+    margin: 30px auto;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;    
+}
+
+.proyectos .card {
+    width: 450px;
+    border-radius: 20px;
+    margin: auto auto 30px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    height: 830px;    
+}
+
+.proyectos img {
+    margin: 30px auto;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+}
+
+.proyectos .card-title {
+    background-color: #7aa3bf;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: -20px auto 20px;
+    text-align: center;
+}
+
+.proyectos .card-text {
+    margin: 10px;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+    color:#1c243c;
+    text-align: center;
+}
+
+.proyectos li img {
+    margin: 8px 8px;
+    width: 10%;
+    box-shadow: none;
+    display: inline-block;
+    list-style: none;
+}
+
+.proyectos ul li {
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+.proyectos .card-link {
+    background-color: #1c243c;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+}
+
+.proyectos .card-link:hover {
+    color:#1c243c;
+    border: 2px solid #1c243c;
+    background-color: white;
+}
+
+.proyectos a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 10px;
+    width: 70%
+}
+
+.masproyect button {
+    background-color: #1c243c;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17px;
+    margin: 10px auto 30px;    
+}
+
+.masproyect {
+    background-color: #e2ebf1;
+}
+
+.masproyect a .btn:hover {
+    color:#1c243c;
+    border: 2px solid #1c243c;
+}
+
+.masproyect a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .proyectos .card {
+        border-radius: 0px;
+    }
+}
+
+/* Contacto */
+
+.contacto {
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    margin: 20px 150px;
+    border-radius: 20px;
+    background: white;
+}
+
+.contacto h1 {
+    margin: 30px auto;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto .card {
+    border-radius: 20px;
+    margin: auto auto 30px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3); 
+    height: 150px;
+    background-color: #e2ebf1;
+}
+
+.contacto i {
+    color: #1c243c;
+    font-size: 23px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.contacto .card-title {
+    color: #1c243c;
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.contacto .card-text {
+    margin: 20px auto;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
+    color:#1c243c;
+    text-align: center;
+}
+
+.contacto .card-body a i {
+    margin: 8px 15px;
+    font-size: 25px;
+    color:#1c243c;
+    justify-self: end;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.contacto a i:hover {
+    color: #2e536c;
+}
+
+@media (max-width: 1300px) {
+    .contacto {
+        margin: 30px 20px;        
+    }    
+    .contacto .card-text {
+        font-size: 17px;
+    }
+    .contacto .card-title {
+        font-size: 20px;
+    }
+    .contacto i {
+        font-size: 20px;
+    }
+    .contacto .card-body a i {
+        font-size: 20px;
+    }
+}
+
+/* Mensaje de copyright */
+
+.copyright {
+    display: flex;
+    background-color: #e2ebf1;    
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px;
+}
+
+.copyright p {
+    margin: 3px auto;
+}
+
+/* FALTA: Agregar proyectos que faltan en portfolio y github | Revisar ortografía y que esté todo ok | Verificar que lo que dice es correcto */
