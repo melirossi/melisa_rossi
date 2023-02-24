@@ -636,6 +636,10 @@ nav .collapse {
     width: 15%;
 }
 
+.proyectos .angular {
+    width: 9%;
+}
+
 .proyectos li img {
     margin: 8px 8px;
     width: 10%;
